@@ -216,6 +216,9 @@ header {
     padding: 100px 50px;
     background-color: #f9f9f9;
   }
+  .pic{
+    width: 100%;
+  }
   
   .choose-us-heading {
     text-align: center;
@@ -241,8 +244,7 @@ header {
   }
   
   .benefit img {
-    width: 75px;
-    height: 75px;
+    width: 100%;
     margin-bottom: 20px;
   }
   
@@ -297,8 +299,7 @@ header {
   }
   
   .trust-indicator img {
-    width: 75px;
-    height: 75px;
+    width: 100%;
     margin-bottom: 20px;
   }
   
@@ -437,11 +438,15 @@ header {
 .contact-section {
     background-color: #f7f7f7;
     padding: 80px 0;
-  }
-  
-  .contact-heading {
     text-align: center;
+}
+
+.contact-heading {
+    text-align: center;
+    margin: auto;
+
     margin-bottom: 50px;
+    width: 80%;
   }
   
   .contact-heading h2 {
@@ -466,7 +471,7 @@ header {
   .contact-form input[type="text"],
   .contact-form input[type="email"],
   .contact-form textarea {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -491,14 +496,25 @@ header {
   
   .contact-details {
     padding-left: 50px;
+    margin-bottom: 50px;
+    margin: auto;
   }
   
   .contact-info {
-    margin-bottom: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+
   }
   
   .contact-item {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     margin-bottom: 20px;
   }
   
@@ -542,6 +558,7 @@ footer {
     padding: 20px 0;
     color: #fff;
     font-size: 16px;
+    text-align: center;
   }
   
   .footer-menu {
@@ -553,7 +570,7 @@ footer {
   }
   
   .footer-menu li {
-    margin-right: 20px;
+    margin-right: 30px;
   }
   
   .footer-menu li:last-child {
